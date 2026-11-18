@@ -1,0 +1,45 @@
+{
+  "name": "anni-desktop",
+  "version": "1.0.0",
+  "description": "ANNI (ANtiproton-ANtImatter): a 3D corduroy plush from the AEgIS Gravity game who lives on your desktop",
+  "main": "main.js",
+  "author": "Bharat Singh Rawat",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "npx --yes electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0"
+  },
+  "build": {
+    "appId": "com.anni.desktop",
+    "productName": "Anni",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "assets/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.png"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.png"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png"
+    }
+  },
+  "keywords": [
+    "desktop-pet",
+    "electron",
+    "threejs",
+    "aegis",
+    "antimatter",
+    "cern"
+  ]
+}

@@ -41,5 +41,10 @@
     "aegis",
     "antimatter",
     "cern"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bharat-Singh-Rawat/anni-desktop.git"
+  },
+  "homepage": "https://github.com/Bharat-Singh-Rawat/anni-desktop#readme"
 }
